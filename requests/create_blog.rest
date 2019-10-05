@@ -1,5 +1,6 @@
 POST http://localhost:3003/api/blogs HTTP/1.1
 content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjVkOTg0OTdmNjhlZDhmMTNlNDJhNDYzMSIsImlhdCI6MTU3MDI2MTgwNn0.aAKao3IcxqHcSPDMbF5FAh-An9hgsPR5VoH0E8BYNUU
 
 {
     "title": "hello",
