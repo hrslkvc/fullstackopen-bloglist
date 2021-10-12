@@ -1,13 +1,15 @@
-const config = require("./utils/config");
 const express = require("express");
-const app = express();
+const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+
 const blogsRouter = require("./controllers/blogs");
 const usersRouter = require("./controllers/users");
 const loginRouter = require("./controllers/login");
-const mongoose = require("mongoose");
 const middleware = require("./utils/middleware");
+const config = require("./utils/config");
+
+const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(middleware.tokenExtractor)
